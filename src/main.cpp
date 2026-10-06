@@ -1,6 +1,6 @@
 /*
 Anthony Wang 10/6/2026
-This program will calculate ohm's law based on user input 
+This program will calculate Ohm's Law based on user input
 */
 
 #include <iostream>
@@ -12,16 +12,15 @@ int main()
     double resistor;
     double current;
 
-    cout << "Input: ";
     if (!(cin >> voltage >> resistor) || resistor <= 0)
     {
-        cout << "Expected output: Invalid Input\n";
+        cout << "Invalid input\n";
     }
     else
     {
         current = voltage / resistor;
-        cout << "Expected output: Current " << current << " A\n";
+        cout << "Current: " << current << " A\n";
     }
-    
+
     return 0;
 }
